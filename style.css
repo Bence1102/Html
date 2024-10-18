@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(231, 229, 111);
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid gray;
+    padding: 5px 5px;
+    gap: 10px;
+}
+img {
+    width: 100%;
+}
+
+.nav{
+    background-color: rgb(222, 222, 222);
+}
+.nav ul{
+    display: grid;
+    grid-template-columns: 1fr 100px 50px;
+    border: 1px solid gray;
+    padding: 10px 10px;
+    gap:10px;
+    list-style-type: none;
+}
+
+h1 {
+    padding: 20px 20px;
+    border: 1px solid gray;
+}
+.nav li {
+    border-left: 1px solid gray;
+    
+}
+
+.folap img {
+    border:1px solid gray;
+    padding: 5px 5px;
+    
+}
+a {
+    text-decoration: none;
+    padding: 5px 5px;
+    color:red;
+}
+
+.b {
+    text-decoration: none;
+    padding: 5px 5px;
+    color:red;
+}
+.b:hover {
+    background-color: red;
+    padding: 5px 5px;
+    color:white ;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid gray;
+    gap: 10px;
+    padding: 2px;
+}
+
+.galeria img{
+    border: 1px solid gray;
+    padding: 5px 5px;
+
+}
+
+@media screen and(max-width:650px) {
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+    }     
+}
+
+
+@media screen and(max-width:500px) {
+    .galeria{
+        grid-template-columns: 1fr;
+    }   
+}
